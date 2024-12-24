@@ -10,7 +10,12 @@
 	<script>
 		function secondHighest(arr) {
 			//Write your code here
-			
+			let shortArr = arr.sort((a,b)=>b-a);
+			let uniqueArr = [...new Set(shortArr)];   
+			if(uniqueArr.length<2){
+				return Infinity;
+              }
+			return uniqueArr[1];    
 		}
 
 		function Main() {
@@ -22,7 +27,7 @@
 			alert(secondHighest(arr));
 		}
 		Main();
-	</script>
+	// </script>
 
     <script type="text/javascript" src="./script.js">
 </script>
