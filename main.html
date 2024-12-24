@@ -13,7 +13,7 @@
 			let shortArr = arr.sort((a,b)=>b-a);
 			let uniqueArr = [...new Set(shortArr)];   
 			if(uniqueArr.length<2){
-				return Infinity;
+				return -Infinity;
               }
 			return uniqueArr[1];    
 		}
